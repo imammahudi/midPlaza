@@ -1,0 +1,21 @@
+
+
+SEO
+1. Sebaiknya ditambahin beberapa kata kunci , seperti Virtu , Digi etc
+2. - Memberikan beberapa kata kunci menarik di Meta Html 
+   - Mendaftarkan di Google Ads
+3. - Implement Caching jika ada beberapa data banyak yang perlu ditampilkan
+   - Server yang baik
+
+PROBLEM SOLVING
+Dalam memberikan solusi ketika di waktu yang sama terjadi request yang dapat mengakibatkan overload maka di case ini ada beberapa bagian :
+1. Frontend 
+ - Mengimplementasikan HTTP Caching
+2. Backend
+ - Memastikan bahwa Requirements Server telah memadai
+ - Membuat queue
+ - Implement Rate Limiting
+
+
+LINK JSFIDDLE
+https://jsfiddle.net/imammahudi/b6o3wjgk/2/

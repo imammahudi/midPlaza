@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; }
+        .item5 { grid-area: footer; }
+        
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            'header header header header header header'
+            'menu menu main main right right';
+          gap: 10px;
+          background-color: #2196F3;
+          padding: 10px;
+        }
+        
+        .grid-container > div {
+          background-color: rgba(255, 255, 255, 0.8);
+          text-align: center;
+          padding: 20px 0;
+          font-size: 30px;
+        }
+        </style>
+
+
+    <script src="api.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border" 
+             role="status" id="loading">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <div class="grid-container">
+    <div class="item1">
+        <h1>Detail Employees</h1>        
+    </div>
+
+    <!-- table for showing data -->
+    <div class="item2"><h3>Employe Age < 25</h3><table id="employees1"></table></div>
+    <div class="item3"><h3>Employe Age 25 - 50</h3><table id="employees2"></table></div>
+    <div class="item4"><h3>Employe Age > 50</h3><table id="employees3"></table></div>
+</div>
+</body>
+</html>
